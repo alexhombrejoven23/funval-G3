@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body {
+    justify-items: center;
+    background-color: aqua;
+}
+
+header {
+    display:flex;
+    background-color: blue;
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    justify-content: center;
+    
+}
+section {
+}
