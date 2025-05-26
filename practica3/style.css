@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    line-height: 1.6;
+    color: rgb(23, 27, 4);
+}
+
+header {
+    background-color: black;
+    color:aquamarine;
+    padding: 16px;
+    text-align: center;
+}
+
+nav.mi-city {
+    background-color: rgb(46, 39, 39);
+    padding: 20px;
+}
+
+nav.mi-city ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+nav.mi-city a {
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 32px;
+    position: relative;
+}
+
+.bolivia {
+    background-color: antiquewhite;
+    padding: 32px;
+    border-radius: 5px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.bolivia-ciudades {
+    flex: 1;
+    padding: 20px;
+}
+
+.bolivia-imagen img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 5px;
+    object-fit: cover;
+    height: auto;
+}
+button {
+    background-color: aqua;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+.content-secction {
+    margin-bottom: 32px;
+}
