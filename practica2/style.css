@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: darkorange;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo {
+   
+    padding: 10px 15px;
+    display: inline-block;
+    text-align: left; 
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+    font-size: 23px; 
+}
+
+.datos {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.seguridad {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    width: 200px;
+   display: flex;
+   justify-content: center;
+   transform: scale(0.1);
+  
+}
