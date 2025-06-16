@@ -4,26 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/main.js" defer type="module"></script>
+  <script src="./js/habilidades.js" defer type="module"></script>
+  <script src="./js/proyectos.js" defer type="module"></script>
   <link href="./output.css" rel="stylesheet">
-  
 </head>
-<body class="bg-blue-950 text-green-200 font-sans">
-  <header class="bg-blue-900 -main py-6 px-4 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-old text-green-200">Alex</h1>
-      <nav>
-        <ul class="flex space-x-6 text-green-200">
-          <li class="hover:text-green-400">ABOUT</li>
-          <li class="hover:text-green-400">SKILLS</li>
-          <li class="hover:text-green-400">EXPERIENCE</li>
-          <li class="hover:text-green-400">MORE INFO</li>
-          <li><a href="contact" class="bg-green-200 text-blue-950 px-4 py-2 rounded hover:bg-green-400">Contact</a></li>
-        </ul>
-      </nav>
+<body class="bg-blue-950 text-light font-sans ">
+ <header class="bg-blue-900 py-6 px-4 shadow-lg w-full">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center">
+      <h1 class="text-2xl font-bold text-green-200">Alex</h1>
+      <button id="menu-toggle" class="md:hidden ml-4 text-green-200 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
-  </header>
-  <section class="container mx-auto py-20 px-4 text-center">
+    
+    <nav id="main-nav" class="hidden md:block">
+      <ul class="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 text-green-200">
+        <li><a href="#About" class="hover:text-green-400 block py-2">ABOUT</a></li>
+        <li><a href="#skills" class="hover:text-green-400 block py-2">SKILLS</a></li>
+        <li><a href="#projects" class="hover:text-green-400 block py-2">EXPERIENCE</a></li>
+        <li><a href="#" class="hover:text-green-400 block py-2">MORE INFO</a></li>
+        <li><a href="./css/img/contact Alex.jpg" class="bg-green-200 text-blue-950 px-4 py-2 rounded hover:bg-green-400 inline-block">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+ </header>
+
+  <section class="bg-blue-950 container mx-auto py-20 px-4 text-center">
     <h1 class="text-5xl font-bold mb-4">I'm <span class="text-highlight">Alex Condori</span></h1>
     <h2 class="text-3xl text-green-300 mb-8">Front end Developer</h2>
     <img src="./ALEX Frontend (1).png" alt="developer" class="mx-auto w-64 object-cover rounded-full mb-8 border-4 border-gray-400">
@@ -48,47 +58,51 @@
             <div class="w-full lg:w-2/3 bg-blue-900 p-8 rounded-2xl shadow-xl">
                 <div class="flex justify-between items-start mb-8">
                     <div>
-                        <h3 class="text-2xl font-bold text-green-300 mb-2">2 WEEKS IN FUNVAL</h3>
+                        <h3 class="text-2xl font-bold text-green-300 mb-2">4 WEEKS IN FUNVAL</h3>
                         <p class="text-gray-400">Front-end Development Intensive</p>
                     </div>
-                    <p class="text-gray-400 bg-gray-950 px-3 py-1 rounded-full">alexcondorimolle@gmail.com</p>
+                    <p class="text-gray-400 bg-gray-950 px-3 py-1 rounded-full">
+  <button id="descargarCV" class="hover:text-white">
+    Descargar CV
+  </button>
+</p>
                 </div>
-                <div class="grid grid-cols-3 gap-6">
+                <div class="grid grid-cols-3 gap-6" id="habilidades-container">
                     <div>
                         <div class="skill-1">
-                            <img src="./img/photo1.png" alt="HTML">
+                            <img src="./css/img/photo1.png" alt="HTML">
                         </div>
-                        <span class="name">HTML</span>
+                        <span class="text-xl text-gray-400">JavaScript</span>
                     </div>
                     <div>
                         <div class="skill-2">
-                            <img src="./img/photo2.png" alt="CSS">
+                            <img src="./css/img/photo2.png" alt="CSS">
                         </div>
-                        <span class="name">CSS</span>
+                        <span class="text-xl text-gray-400">React</span>
                     </div>
                     <div>
                         <div class="skill-3">
-                            <img src="./img/photo3.png" alt="JavaScript">
+                            <img src="./css/img/photo3.png" alt="JavaScript">
                         </div>
-                        <span class="name">JavaScript</span>
+                        <span class="text-xl text-gray-400">CSS</span>
                     </div>
                     <div>
                         <div class="skill-4">
-                            <img src="./img/photo4.png" alt="React">
+                            <img src="./css/img/photo4.png" alt="React">
                         </div>
-                        <span class="name">React</span>
+                        <span class="text-xl text-gray-400">HTML</span>
                     </div>
                     <div>
                         <div class="skill-5">
-                            <img src="./img/photo5.png" alt="Git">
+                            <img src="./css/img/photo5.png" alt="Git">
                         </div>
-                        <span class="name">Git</span>
+                        <span class="text-xl text-gray-400">Tailwind</span>
                     </div>
                     <div>
                         <div class="skill-6">
-                            <img src="./img/photo6.png" alt="Tailwind">
+                            <img src="./css/img/photo6.png" alt="Tailwind">
                         </div>
-                        <span class="name">Tailwind</span>
+                        <span class="text-xl text-gray-400">Git</span>
                     </div>
                 </div>
             </div>              
@@ -113,7 +127,9 @@
       <div class="grid md:grid-cols-2 gap-8">
         <div class="bg-blue-950 p-6 rounded-lg border border-gray-400">
           <h3 class="text-xl font-semibold mb-4 text-green-200">SHOW MY PROJECTS</h3>
-          <p class="text-gray-400">Coming soon...</p>
+          <a 
+          href="./proyectos/proyectos.html" class="inline-block text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          More here </a>
         </div>
         
         <div class="bg-blue-950 p-6 rounded-lg border border-gray-200">
@@ -130,7 +146,7 @@
       <form class="space-y-6">
         <div>
           <label for="name" class="block text-gray-400 mb-2">YOUR NAME</label>
-          <input type="text" id="name" class="w-full p-3 bg-blue-900 border border-gray-400 rounded focus:outline-none " placeholder="escribe tu nombre">
+          <input type="text" id="name" class="w-full p-3 bg-blue-900 border border-gray-400 rounded focus:outline-none text-gray-400 " placeholder="escribe tu nombre">
         </div>
         
         <div>

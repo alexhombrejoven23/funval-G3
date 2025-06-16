@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./output.css" rel="stylesheet">
+  
 </head>
-<body>
-    <h1>HOLA MUNDO</h1>
+<body class="bg to-green-950 text-light font-sans">
+  <header class="bg-gradient-main py-6 px-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-old">Alex</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li>ABOUT</li>
+          <li>SKILLS</li>
+          <li>EXPERIENCE</li>
+          <li>MORE INFO</li>
+          <li><a href="contact" class="bg-highlight text-dark px-4 py-2 rounded hover:bg-neonGreen">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="container mx-auto py-20 px-4 text-center">
+    <h1 class="text-5xl font-bold mb-4">I'm <span class="text-highlight">Alex Condori</span></h1>
+    <h2 class="text-3xl text-green-300 mb-8">Front end Developer</h2>
+    <a href="mi-link" class="bg-highlight text-dark px-6 py-3 rounded-lg text-lg font-medium hover:bg-yellow-300">View My Work</a>
+  </section>
+
+  <section id="About" class="py-16 px-4 bg-gray-800">
+    <div class="container">
+      <h2 class="text-3xl font-bold mb-8 text-center text-highlight">WHO AM I</h2>
+      <p class="text-lg landing-relaxed text-softGray">
+        I am a front end world's developer and author of the field. I want to be more familiar with my work and experience in the field. 
+        Remember, if I have something else, you will always be working at the beginning of your day. We can be ready for writing a new scholarship. 
+        I like to build coding APPS and read many songs based on the same time which is what we are thinking!</p>
+    </div>
+  </section>
+
+  <section class="py-16 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-12 text-center text-shadow-yellow-100">MY SKILLS</h2>
+      <div class="grid md:grid-cols-2col gap-8">
+        <div class="bg-blue-600 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-4 text-shadow-indigo-100">2 weeks Experience Working</h3>
+          <p class="text-shadow-amber-500">fUNVAL INTERNACIONAL</p>
+        </div>
+
+        <div class="bg-blue-900 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-4 text-green-500">ADDIONAL SKILLS</h3>
+          <ul class="space-y-2 text-gray-700">
+             <li>ENGLISH TEACHER</li>
+            <li>INDUSTRIAL MECHANICS TECHNICIAN</li>
+            <li>CUSTOMER SERVICE IN TELECOMMUNICATIONS</li>
+            <li>SECURITY ALARMS SALES AGENT</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="projects" class="py-16 px-4 bg-deepBlue">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-12 text-center text-highlight">THE WORKS CLOSEST TO MY HEART</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-dark p-6 rounded-lg border border-softGray">
+          <h3 class="text-xl font-semibold mb-4 text-neonGreen">SHOW MY PROJECTS</h3>
+          <p class="text-softGray">Coming soon...</p>
+        </div>
+        
+        <div class="bg-dark p-6 rounded-lg border border-softGray">
+          <h3 class="text-xl font-semibold mb-4 text-neonGreen">Providing Company</h3>
+          <p class="text-softGray">Details about company projects</p>
+        </div>
+      </div>
+    </div>
+  <section id="contact" class="py-16 px-4">
+    <div class="container mx-auto max-w-2xl">
+      <h2 class="text-3xl font-bold mb-12 text-center text-highlight">LET'S HAVE A CHAT</h2>
+      
+      <form class="space-y-6">
+        <div>
+          <label for="name" class="block text-softGray mb-2">YOUR NAME</label>
+          <input type="text" id="name" class="w-full p-3 bg-deepBlue border border-softGray rounded focus:outline-none focus:ring-2 focus:ring-highlight" placeholder="DANA JODGERS">
+        </div>
+        
+        <div>
+          <label for="message" class="block text-softGray mb-2">CHAT HERE</label>
+          <textarea id="message" rows="4" class="w-full p-3 bg-deepBlue border border-softGray rounded focus:outline-none focus:ring-2 focus:ring-highlight"></textarea>
+        </div>
+        
+        <button type="submit" class="w-full bg-highlight text-dark py-3 rounded-lg font-bold hover:bg-neonGreen transition">SUMMIT HERE</button>
+      </form>
+    </div>
+  </section>
+  </footer>
 </body>
 </html>
