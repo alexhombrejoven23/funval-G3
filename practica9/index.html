@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-800 text-white min-h-screen flex flex-col items-center pt-10">
+    <div class="mb-8 text-center">
+        <h2 class="text-xl mb-2">TURN</h2>
+        <div class="flex gap-4">
+            <div id="player-x" class="px-4 py-2 bg-pink-600 rounded">X (YOU)</div>
+            <div id="player-o" class="px-4 py-2 rounded">O (CPU)</div>
+        </div>
+    </div>
+    <div class="grid grid-cols-3 gap-2 w-64 h h-64 mb-8">
+        <div class="box border-2 border-black bg-gray-700 h-20 flex items-center justify-center text-3xl font-bold cursor-pointer" data-index="0">1</div>
+        <div class="box border-2 border-black bg-gray-700 h-20 flex items-center justify-center text-3xl font-bold cursor-pointer" data-index="1">2</div>
+        <div class="box border-2 border-black bg-gray-700 h-20 flex items-center justify-center text-3xl font-bold cursor-pointer" data-index="2">3</div>
+        <div class="box border-2 border-black bg-gray-700 h-20 flex items-center justify-center text-3xl font-bold cursor-pointer" data-index="3">4</div>
+        <div class="box border-2 border-black bg-gray-700 h-20 flex items-center justify-center text-3xl font-bold cursor-pointer" data-index="4">5</div>
+        <div class="box border-2 border-black bg-gray-700 h-20 flex items-center justify-center text-3xl font-bold cursor-pointer" data-index="5">6</div>
+        <div class="box border-2 border-black bg-gray-700 h-20 flex items-center justify-center text-3xl font-bold cursor-pointer" data-index="6">7</div>
+        <div class="box border-2 border-black bg-gray-700 h-20 flex items-center justify-center text-3xl font-bold cursor-pointer" data-index="7">8</div>
+        <div class="box border-2 border-black bg-gray-700 h-20 flex items-center justify-center text-3xl font-bold cursor-pointer" data-index="8">9</div> 
+    </div>
+    <div class="flex gap-6 mb-6">
+        <div class="text-center">
+            <div>X (YOU)</div>
+            <div id="x-score">0</div>
+
+        </div>
+        <div class="text-center">
+            <div>TIES</div>
+            <div id="ties-score">0</div>
+
+        </div>
+        <div class="text-center">
+            <div>O (YOU)</div>
+            <div id="o-score">0</div>
+        </div>
+    </div>
+    <div id="result" class="text-xl font-bold mb-4 hidden"></div>
+    <button id="reset" class="bg-pink-600 px-6 py-2 rounded hidden hover:bg-cyan-400">Play again</button>
+</body>
+</html>
